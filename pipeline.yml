@@ -1,0 +1,14 @@
+jobs:
+  - name: job-hello-world
+    public: true
+    plan:
+    - get: git-resource
+    - task: hello-world
+      file: git-resource/concourse-k8s-project-version
+
+resources:
+  - name: git-resource
+    type: git
+    source:
+      uri: https://github.com/tws-training/concourse-semver.git
+      branch: version
