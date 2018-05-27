@@ -4,7 +4,7 @@ jobs:
     plan:
     - get: git-resource
     - task: hello-world
-      file: git-resource/concourse-k8s-project-version
+      file: git-resource/task.yml
 
 resources:
   - name: git-resource
