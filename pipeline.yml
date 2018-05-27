@@ -11,4 +11,3 @@ resources:
     type: git
     source:
       uri: https://github.com/tws-training/concourse-pipline.git
-      branch: version
